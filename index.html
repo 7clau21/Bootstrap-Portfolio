@@ -1,44 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+    <!-- Document responsive across devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Document's character set. -->
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <!-- Linking CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Linking Google Fonts -->
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 <body>
-  <header id="masthead">
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Claudia Palencia</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">About <span class="sr-only">(current)</span></a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!--End navigation-->
     <div class="container">
-      <img id="logo" src="assets/images/claudia.png" alt="Claudia"</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+        <div class="row">
+            <div class="col-md-8 well">
+                <div class="page-header">
+                  <h1>About Me</h1>
+                </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <img class="img-thumbnail pull-left" src="assets/images/IMG_1107.PNG.jpg" alt="Bio picture">
+                    </div>
+                    <div class="col-sm-8 col-md-8">
+                        <p>Hello! I'm Claudia! I'm a momma to a tiny human and 2 fur babies who is always reinventing herself and trying to help others along their journey!</p>
+                        <p>I've been working as a marketing communications manager for the past 5 years and have always had a passion for all things tech. I've embarked on this coding bootcamp journey to be a role model for my daughter and provide a better future for her as well. 
+                        I strongly believe that technology means empowerment and hope to one day be able to call myself a software engineer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Connect with Me</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul class="list-group list-inline">
+                        <li class="list-group-item"><a href="https://github.com/7clau21"><img class="icon" src="assets/images/github-128.png" alt="GitHub Profile"></a></li>
+                        <li class="list-group-item"><a href="https://www.linkedin.com/in/claudiapalencia21/"><img class="icon" src="assets/images/linkedin-128.png" alt="LinkedIn Profile"></a></li>
+                        <li class="list-group-item"><a href="https://stackoverflow.com/users/8593748/claudia-palencia"><img class="icon" src="assets/images/stackoverflow-128.png" alt="StackOverflow Profile"></a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- End main content -->
+        <!-- Footer starts here. -->
+        <footer>
+            <div class="container">
+                <p class="text-center text-muted">
+                     Copyright 2017 Claudia Palencia
+                </p>
+            </div>
+        </footer>
     </div>
-  </header>
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
-      <img src="assets/images/IMG_1107.PNG.jpg" class="auth-image" alt="Claudia Palencia">
-      <p>Hello! I'm Claudia! I'm a momma to a tiny human and 2 fur babies who is always reinventing herself and trying to help others along their journey!</p>
-      <p>I've been working as a marketing communications manager for the past 5 years and have always had a passion for all things tech. I've embarked on this coding bootcamp journey to be a role model for my daughter and provide a better future for her as well. I strongly believe that technology means empowerment and hope to one day be able to call myself a software engineer.</p>
-    </section>
-    <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with Me</h2>
-        <a href="https://github.com/7clau21"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/claudiapalencia21/"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        <a href="https://stackoverflow.com/users/8593748/claudia-palencia"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
-      </div>
-    </section>
-  </div>
-  <footer>
-    <div class="container">
-      Copyright &copy; 2017 Claudia Palencia 
-    </div>
-  </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
